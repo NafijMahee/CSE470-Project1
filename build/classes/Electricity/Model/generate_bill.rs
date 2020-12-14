@@ -1,0 +1,1 @@
+Electricity.generate_bill
