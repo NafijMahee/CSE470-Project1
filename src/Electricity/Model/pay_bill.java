@@ -5,7 +5,7 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class pay_bill extends JFrame{
-    pay_bill(){
+    public pay_bill(){
         JEditorPane j = new JEditorPane();
         j.setEditable(false);   
 
@@ -24,6 +24,9 @@ public class pay_bill extends JFrame{
         setLocation(250,120);
         setVisible(true);
     }
+    public int payBill (int billDue, int currentBill) {
+        return currentBill+billDue;  
+    } 
     public static void main(String[] args){
         new pay_bill().setVisible(true);
     }

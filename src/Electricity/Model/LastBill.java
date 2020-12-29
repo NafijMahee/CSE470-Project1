@@ -11,7 +11,7 @@ public class LastBill extends JFrame implements ActionListener{
     JButton b1;
     Choice c1;
     JPanel p1;
-    LastBill(){
+    public LastBill(){
         setSize(500,900);
         setLayout(new BorderLayout());
         
@@ -49,6 +49,9 @@ public class LastBill extends JFrame implements ActionListener{
         b1.addActionListener(this);
         
         setLocation(350,40);
+    }
+    public double LastBill(int currentUnit ){
+        return currentUnit*5.6;
     }
     public void actionPerformed(ActionEvent ae){
         try{

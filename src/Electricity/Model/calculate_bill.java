@@ -11,7 +11,7 @@ public class calculate_bill extends JFrame implements ActionListener{
     Choice c1,c2;
     JButton b1,b2;
     JPanel p;
-    calculate_bill(){
+    public calculate_bill(){
         
         p = new JPanel();
         p.setLayout(new GridLayout(4,2,30,30));
@@ -94,6 +94,9 @@ public class calculate_bill extends JFrame implements ActionListener{
         getContentPane().setBackground(Color.WHITE);        
         setSize(650,500);
         setLocation(350,220);
+    }
+    public int cal_bill(int billDue, int billCurrent, int billAdvance) {
+        return billDue+billCurrent+billAdvance;     
     }
     public void actionPerformed(ActionEvent ae){
         String a = c1.getSelectedItem();

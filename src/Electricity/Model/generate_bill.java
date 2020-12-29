@@ -11,7 +11,7 @@ public class generate_bill extends JFrame implements ActionListener{
     JButton b1;
     Choice c1,c2;
     JPanel p1;
-    generate_bill(){
+    public generate_bill(){
         setSize(500,900);
         setLayout(new BorderLayout());
         
@@ -90,6 +90,9 @@ public class generate_bill extends JFrame implements ActionListener{
         b1.addActionListener(this);
         
         setLocation(350,40);
+    }
+    public int genera_bill (int lastBill, int currentBill) {
+        return currentBill+lastBill;  
     }
     public void actionPerformed(ActionEvent ae){
         try{
